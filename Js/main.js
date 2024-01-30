@@ -13,7 +13,7 @@ personajesSimpson.forEach((el) => {
   const btnDatos = document.createElement("button");
   btnDatos.innerText = "Mas datos sobre...";
   btnDatos.onclick = () => mostrarInfo(el);
-  
+
   card.appendChild(nombreSimpson);
   card.appendChild(imageSimpson);
   card.appendChild(btnDatos);
@@ -27,7 +27,7 @@ function mostrarInfo(personaje){
   console.log(`Ocupacion ${personaje.Ocupacion}`);
 
   localStorage.setItem('UltimoClicPersonaje', JSON.stringify(personaje));
-  
+
   alert(`${personaje.Historia}. ${personaje.Ocupacion}`);
 }
 
